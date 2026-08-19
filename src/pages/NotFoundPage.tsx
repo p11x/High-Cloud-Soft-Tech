@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Home } from 'lucide-react';
+import SEO from '../components/ui/SEO';
 
 export default function NotFoundPage() {
   return (
     <div className="w-full min-h-[70vh] flex flex-col items-center justify-center text-center px-4 bg-[#0A1428]">
+      <SEO 
+        title="Page Not Found" 
+        description="The page you are looking for may have moved or is no longer available."
+      />
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}

@@ -4,6 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Send, MapPin, Phone, Mail } from 'lucide-react';
 import { useState } from 'react';
+import SEO from '../components/ui/SEO';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -24,15 +25,37 @@ export default function ContactPage() {
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    reset();
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      setIsSuccess(true);
+      reset();
+    } catch (error) {
+      console.error(error);
+      alert('There was an error sending your message. Please try again or contact us directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="w-full">
+      <SEO 
+        title="Contact Us" 
+        description="Get in touch with High Cloud Soft Tech. Let's talk about your next project or digital transformation."
+        canonicalUrl="/contact"
+      />
       <section className="bg-[#050B18] py-32 text-center border-b border-white/5 relative overflow-hidden">
         <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -134,6 +157,19 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+                    
+                    {/* Honeypot field for spam prevention */}
+                    <div style={{ position: 'absolute', opacity: 0, top: 0, left: 0, zIndex: -1 }}>
+                      <label htmlFor="honeypot">Leave this field empty</label>
+                      <input 
+                        type="text" 
+                        id="honeypot" 
+                        {...register('honeypot' as any)} 
+                        tabIndex={-1} 
+                        autoComplete="off"
+                      />
+                    </div>
+
                     <div>
                       <label className="block text-[10px] font-bold tracking-[0.2em] uppercase text-white/50 mb-3">Full Name <span className="text-primary">*</span></label>
                       <input 

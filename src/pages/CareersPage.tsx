@@ -4,6 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Upload, Send } from 'lucide-react';
 import { useState } from 'react';
+import SEO from '../components/ui/SEO';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -24,14 +25,36 @@ export default function CareersPage() {
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSuccess(true);
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send application');
+      }
+
+      setIsSuccess(true);
+    } catch (error) {
+      console.error(error);
+      alert('There was an error sending your application. Please try again or contact us directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div className="w-full">
+      <SEO 
+        title="Careers" 
+        description="Join High Cloud Soft Tech and build intelligent software solutions for real business needs."
+        canonicalUrl="/careers"
+      />
       <section className="bg-[#050B18] py-32 text-center border-b border-white/5 relative overflow-hidden">
         <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -92,6 +115,19 @@ export default function CareersPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+                    
+                    {/* Honeypot field for spam prevention */}
+                    <div style={{ position: 'absolute', opacity: 0, top: 0, left: 0, zIndex: -1 }}>
+                      <label htmlFor="honeypot_career">Leave this field empty</label>
+                      <input 
+                        type="text" 
+                        id="honeypot_career" 
+                        {...register('honeypot' as any)} 
+                        tabIndex={-1} 
+                        autoComplete="off"
+                      />
+                    </div>
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div>
                         <label className="block text-[10px] font-bold tracking-[0.2em] uppercase text-white/50 mb-3">Full Name <span className="text-primary">*</span></label>

@@ -1,9 +1,15 @@
 import { motion } from 'motion/react';
 import { ShieldCheck, Users, Zap } from 'lucide-react';
+import SEO from '../components/ui/SEO';
 
 export default function AboutPage() {
   return (
     <div className="w-full">
+      <SEO 
+        title="About Us" 
+        description="Learn more about High Cloud Soft Tech, our 16+ years of experience, and our vision for digital transformation."
+        canonicalUrl="/about"
+      />
       <section className="bg-[#050B18] py-32 text-center border-b border-white/5 relative overflow-hidden">
         <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="container mx-auto px-4 relative z-10">

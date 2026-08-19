@@ -1,9 +1,15 @@
 import { motion } from 'motion/react';
 import { services } from '../data/siteContent';
+import SEO from '../components/ui/SEO';
 
 export default function ServicesPage() {
   return (
     <div className="w-full">
+      <SEO 
+        title="Our Services" 
+        description="Comprehensive technical solutions including Software Development, Cloud Technologies, IT Services, and Digital Transformation."
+        canonicalUrl="/services"
+      />
       <section className="bg-[#050B18] py-32 text-center border-b border-white/5 relative overflow-hidden">
         <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="container mx-auto px-4 relative z-10">

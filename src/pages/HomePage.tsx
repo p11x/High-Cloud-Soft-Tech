@@ -1,10 +1,38 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { services, industries } from '../data/siteContent';
+import SEO from '../components/ui/SEO';
 
 export default function HomePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "High Cloud Soft Tech",
+    "url": "https://high-cloud-soft-tech.vercel.app",
+    "logo": "https://high-cloud-soft-tech.vercel.app/assets/hero-1.jpg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-98765-43210",
+      "contactType": "customer service",
+      "email": "hello@highcloud.in"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    }
+  };
+
   return (
     <div className="w-full">
+      <SEO 
+        title="Home" 
+        description="High Cloud Soft Tech is a technology-driven software company delivering innovative and reliable solutions that help businesses grow and transform."
+        canonicalUrl="/"
+      />
+      {/* Inject JSON-LD */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[#0A1428]">
         <div className="absolute inset-0 z-0">

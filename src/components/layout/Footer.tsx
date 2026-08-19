@@ -50,8 +50,10 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-[10px] font-mono opacity-30">
-            &copy; {new Date().getFullYear()} HIGH CLOUD SOFT TECH PRIVATE LIMITED.
+          <div className="text-[10px] font-mono opacity-50 flex items-center gap-4">
+            <span>&copy; {new Date().getFullYear()} HIGH CLOUD SOFT TECH PRIVATE LIMITED.</span>
+            <Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
           </div>
           <div className="text-[10px] font-bold tracking-[0.2em] uppercase text-white/50">
             Smart Technology. Smarter Business.
