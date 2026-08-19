@@ -6,7 +6,7 @@
   "scripts": {
     "dev:server": "PORT=3001 tsx server.ts",
     "dev:client": "vite --port=3000 --host=0.0.0.0",
-    "dev": "npm run dev:server & npm run dev:client",
+    "dev": "sh -c 'npm run dev:server & vite --port=3000 --host=0.0.0.0'",
     "build": "vite build",
     "start": "NODE_ENV=production node server.js",
     "preview": "vite preview",

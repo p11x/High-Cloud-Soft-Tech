@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { services } from '../data/siteContent';
 import SEO from '../components/ui/SEO';
 
@@ -34,7 +35,7 @@ export default function ServicesPage() {
                 key={service.slug}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.6 }}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${
                   index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
@@ -48,7 +49,7 @@ export default function ServicesPage() {
                   <p className="text-lg text-white/60 mb-8 leading-relaxed font-light">
                     {service.description}
                   </p>
-                  <ul className="space-y-4">
+                  <ul className="space-y-4 mb-10">
                     {service.features.map((feature, i) => (
                       <li key={i} className="flex items-start gap-4">
                         <span className="w-6 h-6 border border-primary/30 flex items-center justify-center flex-shrink-0 mt-1">
@@ -58,24 +59,23 @@ export default function ServicesPage() {
                       </li>
                     ))}
                   </ul>
+                  <Link to={`/services/${service.slug}`} className="btn-primary inline-flex items-center gap-2">
+                    Learn more
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </Link>
                 </div>
                 
-                <div className={`relative ${index % 2 !== 0 ? 'lg:order-1' : ''}`}>
+                <Link to={`/services/${service.slug}`} className={`relative block group ${index % 2 !== 0 ? 'lg:order-1' : ''}`}>
                   <div className="aspect-[4/3] overflow-hidden border border-white/10 bg-[#0F1E38]">
-                    <img 
-                      src={service.image} 
-                      alt={service.title}
-                      className="w-full h-full object-cover opacity-60 mix-blend-luminosity grayscale hover:grayscale-0 hover:mix-blend-normal transition-all duration-700"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src = `https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000`;
-                      }}
-                    />
+                    <service.illustration className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700" />
                   </div>
                   {/* Tech decoration */}
-                  <div className="absolute top-4 left-4 text-[10px] font-mono opacity-50 text-white mix-blend-difference">
+                  <div className="absolute top-4 left-4 text-[10px] font-mono opacity-50 text-white mix-blend-difference group-hover:opacity-100 transition-opacity">
                     SRV-MOD // {index + 1}
                   </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </div>

@@ -6,6 +6,7 @@ import ErrorBoundary from './components/ui/ErrorBoundary';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage'));
 const IndustriesPage = lazy(() => import('./pages/IndustriesPage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
@@ -28,6 +29,7 @@ export const router = createBrowserRouter([
       { index: true, element: <SuspenseWrapper><HomePage /></SuspenseWrapper> },
       { path: 'about', element: <SuspenseWrapper><AboutPage /></SuspenseWrapper> },
       { path: 'services', element: <SuspenseWrapper><ServicesPage /></SuspenseWrapper> },
+      { path: 'services/:slug', element: <SuspenseWrapper><ServiceDetailPage /></SuspenseWrapper> },
       { path: 'industries', element: <SuspenseWrapper><IndustriesPage /></SuspenseWrapper> },
       { path: 'careers', element: <SuspenseWrapper><CareersPage /></SuspenseWrapper> },
       { path: 'contact', element: <SuspenseWrapper><ContactPage /></SuspenseWrapper> },

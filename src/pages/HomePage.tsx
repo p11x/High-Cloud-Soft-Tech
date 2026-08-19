@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { services, industries } from '../data/siteContent';
+import { platformStatusList } from '../data/platformStatus';
 import SEO from '../components/ui/SEO';
 
 export default function HomePage() {
@@ -96,11 +97,32 @@ export default function HomePage() {
                   <span className="text-[10px] font-mono opacity-50 text-[#F5F5F5]">PLATFORM STATUS // OPERATIONAL</span>
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
                 </div>
-                <div className="space-y-4">
-                  <div className="h-px bg-white/10 w-full"></div>
-                  <div className="h-px bg-white/10 w-2/3"></div>
-                  <div className="h-px bg-white/10 w-full"></div>
-                </div>
+                <motion.ul 
+                  variants={{
+                    hidden: { opacity: 0 },
+                    visible: { opacity: 1, transition: { staggerChildren: 0.1, delayChildren: 1.0 } }
+                  }}
+                  initial="hidden"
+                  animate="visible"
+                  className="space-y-4 w-full"
+                >
+                  {platformStatusList.map((item) => (
+                    <motion.li 
+                      key={item.label}
+                      variants={{
+                        hidden: { opacity: 0, y: 10 },
+                        visible: { opacity: 1, y: 0, transition: { duration: 0.4 } }
+                      }}
+                      className="flex justify-between items-center text-[10px] font-mono text-[#F5F5F5]"
+                    >
+                      <span className="opacity-80 tracking-wider uppercase">{item.label}</span>
+                      <div className="flex items-center gap-2">
+                        <span className="opacity-90 tracking-widest uppercase">{item.status}</span>
+                        <span className={`w-1.5 h-1.5 rounded-full ${item.status === 'operational' ? 'bg-primary animate-pulse' : item.status === 'degraded' ? 'bg-yellow-400' : 'bg-red-500'}`}></span>
+                      </div>
+                    </motion.li>
+                  ))}
+                </motion.ul>
                 <div className="text-[10px] font-mono leading-relaxed opacity-60 text-[#F5F5F5]">
                   <div className="flex justify-between"><span>UPTIME:</span><span>99.99%</span></div>
                   <div className="flex justify-between"><span>REGION:</span><span>GLOBAL</span></div>
