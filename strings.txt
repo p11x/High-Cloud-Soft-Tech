@@ -1,0 +1,433 @@
+Objects are not valid as a React child (found: 
+[object Object]
+object with keys {
+). If you meant to render a collection of children, use an array instead.
+act(...) is not supported in production builds of React.
+React.Children.only expected to receive a single React element child.
+React.cloneElement(...): The argument must be a React element, but you passed 
+forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported
+Minified React error #
+; visit 
+ for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+children dangerouslySetInnerHTML defaultValue defaultChecked innerHTML suppressContentEditableWarning suppressHydrationWarning style
+allowFullScreen async autoFocus autoPlay controls default defer disabled disablePictureInPicture disableRemotePlayback formNoValidate hidden loop noModule noValidate open playsInline readOnly required reversed scoped seamless itemScope
+accent-height alignment-baseline arabic-form baseline-shift cap-height clip-path clip-rule color-interpolation color-interpolation-filters color-profile color-rendering dominant-baseline enable-background fill-opacity fill-rule flood-color flood-opacity font-family font-size font-size-adjust font-stretch font-style font-variant font-weight glyph-name glyph-orientation-horizontal glyph-orientation-vertical horiz-adv-x horiz-origin-x image-rendering letter-spacing lighting-color marker-end marker-mid marker-start overline-position overline-thickness paint-order panose-1 pointer-events rendering-intent shape-rendering stop-color stop-opacity strikethrough-position strikethrough-thickness stroke-dasharray stroke-dashoffset stroke-linecap stroke-linejoin stroke-miterlimit stroke-opacity stroke-width text-anchor text-decoration text-rendering underline-position underline-thickness unicode-bidi unicode-range units-per-em v-alphabetic v-hanging v-ideographic v-mathematical vector-effect vert-adv-y vert-origin-x vert-origin-y word-spacing writing-mode xmlns:xlink x-height
+xlink:actuate xlink:arcrole xlink:role xlink:show xlink:title xlink:type
+ at new 
+mousedown mouseup touchcancel touchend touchstart auxclick dblclick pointercancel pointerdown pointerup dragend dragstart drop compositionend compositionstart keydown keypress keyup input textInput copy cut paste click change contextmenu reset submit
+abort auxClick cancel canPlay canPlayThrough click close contextMenu copy cut drag dragEnd dragEnter dragExit dragLeave dragOver dragStart drop durationChange emptied encrypted ended error gotPointerCapture input invalid keyDown keyPress keyUp load loadedData loadedMetadata loadStart lostPointerCapture mouseDown mouseMove mouseOut mouseOver mouseUp paste pause play playing pointerCancel pointerDown pointerMove pointerOut pointerOver pointerUp progress rateChange reset resize seeked seeking stalled submit suspend timeUpdate touchCancel touchEnd touchStart volumeChange scroll toggle touchMove waiting wheel
+change click focusin focusout input keydown keyup selectionchange
+focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange
+compositionend focusout keydown keypress keyup mousedown
+compositionstart focusout keydown keypress keyup mousedown
+compositionupdate focusout keydown keypress keyup mousedown
+abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting
+cancel close invalid load scroll toggle
+ react-mount-point-unstable 
+0 0 24 24
+M5 12h14
+m12 5 7 7-7 7
+m5 12 7-7 7 7
+M12 19V5
+M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z
+m9 12 2 2 4-4
+M12 12h.01
+M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2
+M22 13a18.15 18.15 0 0 1-20 0
+m6 9 6 6 6-6
+12 6 12 12 16 14
+M12 13v8
+M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242
+m8 17 4-4 4 4
+m18 16 4-4-4-4
+m6 8-4 4 4 4
+m14.5 4-5 16
+M15 2v2
+M15 20v2
+M2 15h2
+M2 9h2
+M20 15h2
+M20 9h2
+M9 2v2
+M9 20v2
+M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z
+M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16
+M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z
+m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7
+M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0
+M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z
+M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z
+m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18
+m2.3 2.3 7.286 7.286
+M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z
+M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z
+M12 18h.01
+M12 2v2
+M12 20v2
+m4.93 4.93 1.41 1.41
+m17.66 17.66 1.41 1.41
+M2 12h2
+M20 12h2
+m6.34 17.66-1.41 1.41
+m19.07 4.93-1.41 1.41
+M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2
+M22 21v-2a4 4 0 0 0-3-3.87
+M16 3.13a4 4 0 0 1 0 7.75
+M18 6 6 18
+m6 6 12 12
+UI/UX Design
+Clear, engaging interfaces built to convert.
+Research and discovery
+Wireframes and prototypes
+Design systems and UI kits
+Web Development
+Responsive websites and web applications.
+Responsive front-end development
+Back-end and API integration
+Performance and security basics
+Software Testing & QA
+Performance, usability, and stability validation.
+Functional testing
+Regression checks
+Release readiness support
+Mobile App Development
+Android and iOS apps with smooth experiences.
+Android applications
+iOS applications
+Cross-platform development
+Ecommerce Development
+Online stores built for growth.
+Product catalogs
+Checkout flows
+Admin management
+Dedicated Development Team
+Focused talent to accelerate delivery.
+Team extension
+Sprint delivery
+Long-term support
+Custom Software Development
+Software that fits your workflow.
+Business apps
+Workflow tools
+Integration-ready platforms
+Software Product Development
+Product ideas shaped into reliable releases.
+Concept planning
+Design and prototyping
+Build and release
+Secure financial applications, dashboards, payment workflows, and compliance-aware digital products.
+Custom InsurTech applications that connect backend data with user-friendly customer portals.
+Learning management systems and education platforms built for students and administrators.
+Healthcare solutions focused on privacy, usability, and efficient care delivery.
+Media & Entertainment
+Scalable media solutions for content delivery and interactive user experiences.
+Oil & Gas Mining
+Software for remote asset tracking, field operations, and complex data visualization.
+Retail & Ecommerce
+High-performance ecommerce solutions integrated with inventory and marketing tools.
+Logistics & Distribution
+Unified logistics tools for tracking, reporting, and operations management.
+Travel & Hospitality
+Customer-facing products and back-office tools for reservations, payments, and support.
+Public Sector
+Secure portals, case management systems, and public data-sharing platforms.
+Energy And Utilities
+Digital tools for resource allocation, predictive maintenance, and customer service.
+About Us
+(prefers-reduced-motion: reduce)
+Business-specific apps, ecommerce solutions, gamification software, and client mobile apps.
+Business process mapping
+Role-based dashboards
+API and system integrations
+Outsourcing Development
+Extend your delivery capacity with experienced developers who plug into your team and process.
+Dedicated team setup
+Sprint-based execution
+Transparent reporting
+We turn product ideas into market-ready releases with planning, design, development, and support.
+MVP planning
+Prototype to production
+Launch and iteration support
+Real Product Work
+Build websites, apps, dashboards, and platforms used by practical business teams.
+Supportive Team
+Collaborate with designers, developers, QA engineers, and project leads.
+Reliable Growth
+Work with clear expectations, review cycles, and space to sharpen your craft.
++91 76764 28231
+Dronezz Fly
+Dronezz Fly Private Limited
+BVR Lake Front, Veerannapalya Main Rd, Kanaka Nagar, Veerannapalya, Nagavara, Bengaluru, Karnataka 560045
+We study users, business goals, and competitors before shaping the design direction.
+Clickable flows help you validate structure, journeys, and key screens before build.
+Reusable components keep product screens consistent as the platform grows.
+Pages are built to feel clean and usable across desktop, tablet, and mobile.
+We connect interfaces with secure APIs, databases, and third-party services.
+Core speed, stability, validation, and protection checks are handled during delivery.
+Important user journeys are checked against expected behavior before release.
+Updates are tested against existing features so fixes do not create new breakage.
+We help verify builds, report issues clearly, and prepare the product for launch.
+Android apps are designed for practical use, smooth navigation, and reliable performance.
+iOS experiences follow clean interaction patterns and dependable release practices.
+Shared-code approaches help reduce effort while keeping the experience polished.
+Catalogs are structured for easy browsing, filtering, search, and ongoing management.
+Checkout journeys are shaped to reduce friction and support secure transactions.
+Admin tools help teams manage products, content, orders, and everyday operations.
+We add focused talent to your existing team where delivery capacity is needed most.
+Work is organized into clear milestones with visible progress and review points.
+We stay available for improvements, fixes, maintenance, and scaling needs.
+Custom apps bring daily operations, records, approvals, and reporting into one usable system.
+Manual steps are converted into guided digital flows that reduce delays and mistakes.
+The software is planned to connect with CRMs, ERPs, payment tools, and other services.
+We define the audience, core features, technical path, and first release scope.
+Product ideas become visual, testable flows before full engineering begins.
+The product is developed, tested, deployed, and prepared for practical user adoption.
+We clarify goals, users, scope, and priorities before execution starts.
+The solution is built with practical architecture, clean interfaces, and maintainable code.
+Post-launch improvements, fixes, and operational support keep the product dependable.
+(max-width: 720px)
+section, .hero, .ticker-strip, .cta-strip, footer
+.section-label, .page-breadcrumb, h1, h2, .section-title, .page-hero p, .section-sub, .fh-kicker, .fh-hero p
+.page-hero-panel, .info-card, .contact-card, .flip-card, .fh-card, .fh-hero-card, .glass-panel, .auth-card
+.about-img, .offering-img, .ind-img, .industry-card img, .fh-image-block, section img
+0px 0px -60px 0px
+(hover: hover)
+.fh-hero, .page-hero
+Request completed.
+Server returned an invalid response.
+home-link is-active
+Why Choose Us
+Our Team
+topbar site-topbar
+Software Development
+Cloud Platforms
+Mobile Apps
+QA Support
+Modern software, cloud, and mobile solutions. 
+Hire Us
+About Us 
+Services 
+Industries 
+dropdown industry-dropdown
+Start Project
+Open menu
+Close menu
+theme-toggle mobile-theme-toggle
+Light mode
+Dark mode
+Contact Us
+ delivers software, design, testing, and product engineering solutions from Dubai, United Arab Emirates.
+Dubai: 
+Bengaluru: 
+Copyright © 2025 
+ All Rights Reserved.
+Loading Dronezz Fly
+Smart Solutions. Stronger Future.
+container fh-hero-inner
+Smart Solutions. 
+Stronger Future.
+ delivers modern software solutions for businesses that need speed, stability, and a strong digital presence.
+Explore Services 
+Start a Project
+Dronezz Fly technology skyline
+Technology & Innovation
+We combine product thinking, engineering discipline, and practical delivery to build solutions that work in the real world.
+Business & Finance
+Gaming & Entertainment
+Information Technology
+Retail & Distribution
+container fh-big-grid
+About Dronezz Fly
+Years of Experience
+about company
+Your Partner for 
+Software Innovation
+We plan, design, build, test, and support digital products for teams that need practical software, clean interfaces, and dependable delivery from idea to launch.
+Secure Solutions
+Built with security and reliability in mind.
+Scalable Architecture
+Designed to grow with your business.
+Expert Team
+Focused specialists across design and development.
+btn-primary about-more
+Discover More 
+fh-card fh-about-feature
+fh-section alt
+our service
+We Offer a Wide Variety of IT Services
+We design, build, test, and support digital products that help businesses modernize operations, improve customer experiences, and ship faster.
+fh-card fh-service
+container fh-offerings
+practical delivery
+For Real 
+Business Needs
+Tailored software solutions designed around your business process, users, and growth goals.
+Business software workflow planning
+Focused delivery paths for growing teams
+fh-card fh-offer
+fh-section alt tech-studio-section
+technology index
+Improve and Innovate with the Right Tech Stack
+We work with modern frameworks and platforms to keep products maintainable, scalable, and ready for change.
+Our Service Industries
+Where We 
+btn-primary industries-more
+Our Industries 
+fh-card fh-ind
+LEARN MORE 
+Design, Motion, and Engineering in One Flow
+Engineering in One Flow
+Variety of IT Services
+Right Tech Stack
+Where We Serve
+Let's Talk About Your Next Project
+Next Project
+Technology Partner for Growing Teams
+Growing Teams
+Software Services Built for Delivery
+Built for Delivery
+Modern Stacks for Practical Products
+Practical Products
+Domain-Aware Digital Solutions
+Digital Solutions
+Build Your Future With Dronezz Fly
+Page Not Found
+contact us
+Reach out for project discussion, design support, development work, testing, or long-term technology partnership.
+Dubai Office
+Open in Google Maps
+Bengaluru Office
+Send Email
+Call Now
+Monday to Saturday, 9:00 AM to 6:00 PM
+fh-card fh-contact-card
+Ready to Start Your Project?
+Let's build something great together. Share your idea and we'll help shape the right solution.
+Get in Touch 
+Strategy and planning
+Clarify goals, users, priorities, and the right delivery path before work begins.
+Design and development
+Shape clean interfaces and build maintainable software that fits the workflow.
+Testing and support
+Validate key journeys, fix issues, and keep the product dependable after launch.
+Company direction
+Product thinking, delivery discipline, and long-term technical partnership.
+Team capability
+Designers, developers, and QA support working around practical business goals.
+Reliable outcomes
+Clear communication, stable delivery, and support after release.
+Service discovery
+Understand the required product, users, scope, integrations, and delivery timeline.
+Build execution
+Design, develop, test, and refine each service with focused implementation.
+Launch support
+Prepare releases, check stability, and support improvements after delivery.
+Modern stacks
+Use web, mobile, cloud, and connected technologies that are maintainable.
+Scalable builds
+Choose architecture and integrations that can grow with the product.
+Platform support
+Keep applications stable across devices, browsers, and operating environments.
+Domain workflows
+Understand the business rules and daily operations behind each industry.
+Custom solutions
+Build software around industry-specific users, data, and processes.
+Operational reliability
+Support secure, stable systems for repeated real-world use.
+Visit our offices
+Open the exact Dubai or Bengaluru office location in Google Maps.
+Dubai Maps
+Bengaluru Maps
+Open roles
+Apply for design, frontend, backend, QA, and business development paths.
+Resume review
+Submit your skills and latest resume for review by the hiring team.
+Growth path
+Work on practical software projects with clear expectations and team support.
+Check the URL
+The page may have moved, changed name, or no longer exists.
+Use navigation
+Return to the main pages through the header or site sections.
+Contact us
+Reach out if you expected a specific page to be available.
+Delivery Focus
+page-hero react-page-hero
+container page-hero-grid
+Company Strengths
+Choose from focused design, development, testing, product, and team-extension services.
+Service Approach
+We use maintainable, scalable technologies for web, mobile, cloud, and connected products.
+Technology Priorities
+We build around the workflows and constraints that matter in each industry.
+Industry Priorities
+container fh-industries
+Service Detail
+Industry Detail
+What We Cover
+container info-card-grid
+Contact Options
+Creating your account...
+Checking your details...
+Request failed.
+Cannot reach the API. Make sure Flask is running on port 5000.
+Create account
+Welcome back
+Tell us how we can 
+help you today.
+Login to continue your 
+project journey.
+Create an account and share the purpose of your visit so our team can understand your needs.
+Use your account details to continue from where you left off.
+Sign up
+Full name
+Purpose of visit
+Select purpose
+Project enquiry
+Service information
+Career enquiry
+Create Account
+Already have an account?
+New here?
+Create an account
+Resume must be 8 MB or smaller.
+Submitting application...
+We could not submit your application. Please check the details and try again.
+Join a team that builds useful digital products for real business needs.
+Application Steps
+fh-section career-apply-section
+container react-career-grid
+Dronezz Fly team collaboration
+Open paths for designers, developers, QA, and growth talent
+open roles
+Send Your 
+Share your credentials and resume. Our team will review your profile and contact you when there is a match.
+auth-card career-form
+ Career Application
+Start Your Journey
+Fill the details below. Keep your skills clear and attach your latest resume.
+Your full name
+Phone optional
++91 98765 43210
+Role applying for
+Select role
+UI/UX Designer
+Frontend Developer
+Backend Developer
+QA Engineer
+Business Development
+Credentials / skills
+Tell us about your skills, tools, projects, and experience.
+career-upload-field career-field-wide
+Resume selected
+Upload resume
+PDF, DOC, or DOCX up to 8 MB
+Additional message
+Anything else you want our hiring team to know?
+btn-primary career-submit
+Submit Application
+auth-message career-message
+The page you are looking for may have moved or is no longer available.
+Next Steps
+(prefers-color-scheme: dark)
+back-top visible
+Back to top
