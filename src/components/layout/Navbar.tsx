@@ -24,8 +24,8 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center gap-2">
               <Logo />
-              <span className="text-xl font-bold tracking-tighter text-[#F5F5F5]">
-                HIGH CLOUD
+              <span className="text-xl font-bold tracking-tighter text-[#F5F5F5] uppercase">
+                High Cloud Soft Tech
               </span>
             </Link>
           </div>

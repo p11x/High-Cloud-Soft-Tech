@@ -8,25 +8,25 @@ export default function ITServicesIllustration({ className = "" }: { className?:
         </div>
         
         {/* Nodes */}
-        <div className="absolute top-[15%] left-[20%] w-10 h-10 bg-[#050B18] border border-white/20 rounded-lg flex items-center justify-center">
+        <div className="absolute top-[20%] left-[25%] -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#050B18] border border-white/20 rounded-lg flex items-center justify-center">
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
         </div>
-        <div className="absolute top-[20%] right-[20%] w-10 h-10 bg-[#050B18] border border-white/20 rounded-lg flex items-center justify-center">
+        <div className="absolute top-[25%] left-[75%] -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#050B18] border border-white/20 rounded-lg flex items-center justify-center">
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
         </div>
-        <div className="absolute bottom-[20%] left-[25%] w-10 h-10 bg-[#050B18] border border-white/20 rounded-lg flex items-center justify-center">
+        <div className="absolute top-[75%] left-[25%] -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#050B18] border border-white/20 rounded-lg flex items-center justify-center">
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
         </div>
-        <div className="absolute bottom-[15%] right-[25%] w-10 h-10 bg-[#050B18] border border-white/20 rounded-lg flex items-center justify-center">
+        <div className="absolute top-[80%] left-[75%] -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#050B18] border border-white/20 rounded-lg flex items-center justify-center">
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
         </div>
 
         {/* Connecting Lines */}
         <svg className="absolute inset-0 w-full h-full -z-10" style={{ pointerEvents: 'none' }}>
-          <path d="M40% 25% L50% 50%" stroke="rgba(56,189,248,0.3)" strokeWidth="2" strokeDasharray="4 4" />
-          <path d="M70% 30% L50% 50%" stroke="rgba(56,189,248,0.3)" strokeWidth="2" strokeDasharray="4 4" />
-          <path d="M35% 70% L50% 50%" stroke="rgba(56,189,248,0.3)" strokeWidth="2" strokeDasharray="4 4" />
-          <path d="M65% 75% L50% 50%" stroke="rgba(56,189,248,0.3)" strokeWidth="2" strokeDasharray="4 4" />
+          <line x1="25%" y1="20%" x2="50%" y2="50%" stroke="rgba(56,189,248,0.3)" strokeWidth="2" strokeDasharray="4 4" />
+          <line x1="75%" y1="25%" x2="50%" y2="50%" stroke="rgba(56,189,248,0.3)" strokeWidth="2" strokeDasharray="4 4" />
+          <line x1="25%" y1="75%" x2="50%" y2="50%" stroke="rgba(56,189,248,0.3)" strokeWidth="2" strokeDasharray="4 4" />
+          <line x1="75%" y1="80%" x2="50%" y2="50%" stroke="rgba(56,189,248,0.3)" strokeWidth="2" strokeDasharray="4 4" />
         </svg>
 
         {/* Uptime metric */}

@@ -11,12 +11,17 @@ export default function CloudTechIllustration({ className = "" }: { className?: 
         {/* Containers/Services below */}
         <div className="flex gap-6 w-full justify-center">
           {[1,2,3].map(i => (
-            <div key={i} className="w-12 h-14 bg-[#0F1E38] border border-white/10 rounded-lg flex items-center justify-center relative">
-              <div className="w-6 h-1 bg-white/20 rounded-full"></div>
+            <div key={i} className="flex flex-col items-center">
               {/* Lines connecting up to cloud */}
-              <div className="absolute -top-10 left-1/2 w-px h-10 bg-gradient-to-t from-[#38BDF8]/40 to-transparent -translate-x-1/2"></div>
-              {/* Upward arrows */}
-              <div className="absolute -top-6 left-1/2 w-1.5 h-1.5 border-t border-l border-[#38BDF8] -translate-x-1/2 rotate-45"></div>
+              <div className="w-px h-10 bg-gradient-to-t from-[#38BDF8]/40 to-transparent relative">
+                {/* Upward arrows */}
+                <div className="absolute top-3 left-1/2 -translate-x-1/2 w-1.5 h-1.5 border-t border-l border-[#38BDF8] rotate-45"></div>
+              </div>
+              
+              {/* Server Box */}
+              <div className="w-12 h-14 bg-[#0F1E38] border border-white/10 rounded-lg flex items-center justify-center -mt-px z-10 relative">
+                <div className="w-6 h-1 bg-white/20 rounded-full"></div>
+              </div>
             </div>
           ))}
         </div>

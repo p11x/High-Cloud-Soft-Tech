@@ -10,8 +10,8 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6">
               <Logo />
-              <span className="text-xl font-bold tracking-tighter text-[#F5F5F5]">
-                HIGH CLOUD
+              <span className="text-xl font-bold tracking-tighter text-[#F5F5F5] uppercase">
+                High Cloud Soft Tech
               </span>
             </Link>
             <p className="max-w-md mb-8 text-sm text-white/60 font-light leading-relaxed">

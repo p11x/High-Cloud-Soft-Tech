@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { services, industries } from '../data/siteContent';
-import { platformStatusList } from '../data/platformStatus';
+import PlatformStatusPanel from '../components/ui/PlatformStatusPanel';
 import SEO from '../components/ui/SEO';
 
 export default function HomePage() {
@@ -91,45 +91,7 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="md:col-span-4 relative hidden md:block"
           >
-            <div className="relative w-full aspect-[4/5] bg-[#0F1E38] border border-white/10 p-6 shadow-2xl backdrop-blur-sm">
-              <div className="w-full h-full border border-white/5 flex flex-col justify-between p-6">
-                <div className="flex justify-between items-start">
-                  <span className="text-[10px] font-mono opacity-50 text-[#F5F5F5]">PLATFORM STATUS // OPERATIONAL</span>
-                  <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                </div>
-                <motion.ul 
-                  variants={{
-                    hidden: { opacity: 0 },
-                    visible: { opacity: 1, transition: { staggerChildren: 0.1, delayChildren: 1.0 } }
-                  }}
-                  initial="hidden"
-                  animate="visible"
-                  className="space-y-4 w-full"
-                >
-                  {platformStatusList.map((item) => (
-                    <motion.li 
-                      key={item.label}
-                      variants={{
-                        hidden: { opacity: 0, y: 10 },
-                        visible: { opacity: 1, y: 0, transition: { duration: 0.4 } }
-                      }}
-                      className="flex justify-between items-center text-[10px] font-mono text-[#F5F5F5]"
-                    >
-                      <span className="opacity-80 tracking-wider uppercase">{item.label}</span>
-                      <div className="flex items-center gap-2">
-                        <span className="opacity-90 tracking-widest uppercase">{item.status}</span>
-                        <span className={`w-1.5 h-1.5 rounded-full ${item.status === 'operational' ? 'bg-primary animate-pulse' : item.status === 'degraded' ? 'bg-yellow-400' : 'bg-red-500'}`}></span>
-                      </div>
-                    </motion.li>
-                  ))}
-                </motion.ul>
-                <div className="text-[10px] font-mono leading-relaxed opacity-60 text-[#F5F5F5]">
-                  <div className="flex justify-between"><span>UPTIME:</span><span>99.99%</span></div>
-                  <div className="flex justify-between"><span>REGION:</span><span>GLOBAL</span></div>
-                  <div className="flex justify-between"><span>ENV:</span><span>PROD</span></div>
-                </div>
-              </div>
-            </div>
+            <PlatformStatusPanel />
           </motion.div>
         </div>
       </section>
@@ -144,9 +106,9 @@ export default function HomePage() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-[11px] font-bold tracking-[0.2em] text-primary uppercase mb-4">About High Cloud</h2>
+              <h2 className="text-[11px] font-bold tracking-[0.2em] text-primary uppercase mb-4">About High Cloud Soft Tech</h2>
               <h3 className="text-4xl md:text-5xl font-black tracking-tighter uppercase mb-6 text-[#F5F5F5] leading-tight">
-                Build Your Future <br/> With <span className="text-primary">High Cloud</span>
+                Build Your Future <br/> With <span className="text-primary">High Cloud Soft Tech</span>
               </h3>
               <p className="text-lg text-white/60 mb-8 leading-relaxed font-light border-l-2 border-white/10 pl-6">
                 High Cloud Soft Tech is a technology-driven software company with 16 years of industry experience. We combine technology, industry expertise, and a customer-focused approach to build solutions that simplify business processes, improve efficiency, and create measurable value.

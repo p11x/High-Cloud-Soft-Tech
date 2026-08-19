@@ -8,6 +8,7 @@ const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage'));
 const IndustriesPage = lazy(() => import('./pages/IndustriesPage'));
+const IndustryDetailPage = lazy(() => import('./pages/IndustryDetailPage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
@@ -31,6 +32,7 @@ export const router = createBrowserRouter([
       { path: 'services', element: <SuspenseWrapper><ServicesPage /></SuspenseWrapper> },
       { path: 'services/:slug', element: <SuspenseWrapper><ServiceDetailPage /></SuspenseWrapper> },
       { path: 'industries', element: <SuspenseWrapper><IndustriesPage /></SuspenseWrapper> },
+      { path: 'industries/:slug', element: <SuspenseWrapper><IndustryDetailPage /></SuspenseWrapper> },
       { path: 'careers', element: <SuspenseWrapper><CareersPage /></SuspenseWrapper> },
       { path: 'contact', element: <SuspenseWrapper><ContactPage /></SuspenseWrapper> },
       { path: 'privacy-policy', element: <SuspenseWrapper><PrivacyPolicyPage /></SuspenseWrapper> },
