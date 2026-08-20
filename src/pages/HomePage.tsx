@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { services, industries } from '../data/siteContent';
 import PlatformStatusPanel from '../components/ui/PlatformStatusPanel';
+import TopClientsSection from '../components/ui/TopClientsSection';
 import SEO from '../components/ui/SEO';
 
 export default function HomePage() {
@@ -113,6 +114,9 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
+
+      {/* Our Top Clients Section */}
+      <TopClientsSection />
 
       {/* About Section Snippet */}
       <section className="py-32 bg-[#050B18]">
