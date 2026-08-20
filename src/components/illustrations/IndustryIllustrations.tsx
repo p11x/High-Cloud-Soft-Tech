@@ -1,4 +1,4 @@
-import { createElement } from 'react';
+import React from 'react';
 
 const BaseIllustration = ({ className = "", children }: { className?: string, children: React.ReactNode }) => (
   <div className={`w-full h-full bg-[#0A1428] relative overflow-hidden flex items-center justify-center ${className}`}>

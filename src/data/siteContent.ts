@@ -21,21 +21,6 @@ import {
 } from '../components/illustrations/IndustryIllustrations';
 
 
-import { 
-  FinanceIllustration,
-  InsuranceIllustration,
-  EducationIllustration,
-  HealthcareIllustration,
-  MediaIllustration,
-  OilGasIllustration,
-  RetailIllustration,
-  LogisticsIllustration,
-  TravelIllustration,
-  PublicSectorIllustration,
-  EnergyIllustration
-} from '../components/illustrations/IndustryIllustrations';
-
-
 export const services = [
   {
     title: "Software Development",

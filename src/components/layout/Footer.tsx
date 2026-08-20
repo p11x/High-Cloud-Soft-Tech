@@ -18,11 +18,12 @@ export default function Footer() {
               High Cloud Soft Tech is a technology-driven software company delivering innovative and reliable solutions that help businesses grow and transform.
             </p>
             <div className="flex flex-col gap-2">
-              <div className="text-[10px] font-bold tracking-widest text-primary uppercase">Core Competencies</div>
+              <div className="text-[10px] font-bold tracking-widest text-primary uppercase">Core Offerings</div>
               <div className="flex flex-wrap gap-2">
-                <div className="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-medium">Digital Strategy</div>
-                <div className="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-medium">Platform Engineering</div>
-                <div className="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-medium">Data Integration</div>
+                <div className="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-medium text-white/80">Software Development</div>
+                <div className="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-medium text-white/80">IT Services</div>
+                <div className="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-medium text-white/80">Cloud</div>
+                <div className="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-medium text-white/80">Digital Innovation</div>
               </div>
             </div>
           </div>
@@ -56,7 +57,7 @@ export default function Footer() {
             <Link to="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>
           </div>
           <div className="text-[10px] font-bold tracking-[0.2em] uppercase text-white/50">
-            Smart Technology. Smarter Business.
+            Smart Technology | Shaping the business
           </div>
         </div>
       </div>

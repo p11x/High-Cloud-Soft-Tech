@@ -28,8 +28,8 @@ export default function HomePage() {
   return (
     <div className="w-full">
       <SEO 
-        title="Home" 
-        description="High Cloud Soft Tech is a technology-driven software company delivering innovative and reliable solutions that help businesses grow and transform."
+        title="Smart Technology & Smart Business" 
+        description="High Cloud Soft Tech — Smart Technology | Shaping the business. Delivering Software Development, IT Services, Cloud Technologies, and Digital Innovation."
         canonicalUrl="/"
       />
       {/* Inject JSON-LD */}
@@ -57,11 +57,29 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="md:col-span-8"
           >
-            <h1 className="text-[60px] md:text-[80px] lg:text-[100px] leading-[0.9] font-black tracking-tighter uppercase mb-6 text-[#F5F5F5]">
-              Smart Technology. <br className="hidden md:block" />
-              Smarter <span className="text-primary">Business.</span>
+            {/* Tagline / Subtitle Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-[10px] sm:text-[11px] font-mono font-medium tracking-wider text-primary uppercase mb-6 backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              Smart Technology | Shaping the business
+            </div>
+
+            <h1 className="text-[52px] sm:text-[70px] md:text-[84px] lg:text-[98px] leading-[0.92] font-black tracking-tighter uppercase mb-4 text-[#F5F5F5]">
+              Smart Technology <br className="hidden md:block" />
+              <span className="text-white/80">&</span> Smart <span className="text-primary">Business.</span>
             </h1>
-            <p className="max-w-md text-lg text-white/60 leading-relaxed font-light mb-10 border-l-2 border-primary pl-6">
+
+            {/* Core Offerings Bar */}
+            <div className="text-[11px] sm:text-xs font-mono font-semibold tracking-wider text-[#38BDF8] uppercase mb-6 opacity-90 flex flex-wrap items-center gap-x-2 gap-y-1">
+              <span>Software Development</span>
+              <span className="text-white/30">|</span>
+              <span>IT Services</span>
+              <span className="text-white/30">|</span>
+              <span>Cloud</span>
+              <span className="text-white/30">|</span>
+              <span>Digital Innovation</span>
+            </div>
+
+            <p className="max-w-xl text-lg text-white/60 leading-relaxed font-light mb-10 border-l-2 border-primary pl-6">
               High Cloud Soft Tech is a technology-driven software company delivering innovative and reliable solutions that help businesses grow, transform, and stay ahead.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 mb-12 md:mb-0">
