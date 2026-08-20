@@ -8,15 +8,30 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-            <Link to="/" className="flex items-center gap-2 mb-6">
-              <Logo />
-              <span className="text-xl font-bold tracking-tighter text-[#F5F5F5] uppercase">
-                High Cloud Soft Tech
-              </span>
+            <Link to="/" className="inline-flex items-center gap-4 mb-6 group">
+              <Logo size="lg" />
+              <div className="flex flex-col">
+                <div className="flex items-center gap-2 text-2xl font-black tracking-tight uppercase leading-none">
+                  <span className="text-white">HIGH</span>
+                  <span className="bg-gradient-to-r from-blue-400 via-sky-400 to-cyan-300 bg-clip-text text-transparent">CLOUD</span>
+                </div>
+                <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.25em] text-primary uppercase mt-1.5">
+                  <span>SOFT TECH</span>
+                  <span className="text-white/40">|</span>
+                  <span className="text-white/50 text-[9px]">PRIVATE LIMITED</span>
+                </div>
+              </div>
             </Link>
-            <p className="max-w-md mb-8 text-sm text-white/60 font-light leading-relaxed">
+            <p className="max-w-md mb-6 text-sm text-white/60 font-light leading-relaxed">
               High Cloud Soft Tech is a technology-driven software company delivering innovative and reliable solutions that help businesses grow and transform.
             </p>
+            <div className="flex items-center gap-2 text-[9px] font-semibold tracking-[0.2em] uppercase text-white/70 mb-8">
+              <span>AI</span>
+              <span className="w-1 h-1 rounded-full bg-primary inline-block"></span>
+              <span>SOFTWARE</span>
+              <span className="w-1 h-1 rounded-full bg-primary inline-block"></span>
+              <span>INNOVATION</span>
+            </div>
             <div className="flex flex-col gap-2">
               <div className="text-[10px] font-bold tracking-widest text-primary uppercase">Core Offerings</div>
               <div className="flex flex-wrap gap-2">

@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Card Shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+
+    <!-- Ambient Emblem Aura -->
+    <radialGradient id="emblemAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00A3FF" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#00A3FF" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Left Dark Pillar 3D Gradients -->
+    <linearGradient id="darkPillarFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="40%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="darkPillarSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <!-- Right Blue Pillar 3D Gradients -->
+    <linearGradient id="bluePillarFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF" />
+      <stop offset="35%" stop-color="#00A3FF" />
+      <stop offset="100%" stop-color="#0055FF" />
+    </linearGradient>
+    <linearGradient id="bluePillarSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0080FF" />
+      <stop offset="100%" stop-color="#0044CC" />
+    </linearGradient>
+
+    <!-- Ribbon Loop Gradients -->
+    <linearGradient id="ribbonGradFront" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="25%" stop-color="#00B4FF" />
+      <stop offset="70%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#003DBD" />
+    </linearGradient>
+    <linearGradient id="ribbonGradBack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0055D4" />
+      <stop offset="100%" stop-color="#002277" />
+    </linearGradient>
+
+    <!-- Cloud Text Gradient -->
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052FF" />
+      <stop offset="50%" stop-color="#0095FF" />
+      <stop offset="100%" stop-color="#00D2FF" />
+    </linearGradient>
+
+    <!-- Line Gradient -->
+    <linearGradient id="lineGradLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D2FF" stop-opacity="0" />
+      <stop offset="100%" stop-color="#0077FF" />
+    </linearGradient>
+    <linearGradient id="lineGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0077FF" />
+      <stop offset="100%" stop-color="#00D2FF" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- 3D Shadow for Emblem -->
+    <filter id="emblemShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.22" />
+    </filter>
+  </defs>
+
+  <!-- WHITE ROUNDED SQUARE BOX CONTAINER -->
+  <rect x="25" y="25" width="550" height="550" rx="80" ry="80" fill="#FFFFFF" filter="url(#cardShadow)" />
+  <!-- Subtle Inner Border -->
+  <rect x="25" y="25" width="550" height="550" rx="80" ry="80" fill="none" stroke="#F1F5F9" stroke-width="2" />
+
+  <!-- EMBLEM SECTION -->
+  <g transform="translate(50, 20)">
+    <!-- Ambient Aura -->
+    <ellipse cx="250" cy="225" rx="160" ry="55" fill="url(#emblemAura)" />
+
+    <g filter="url(#emblemShadow)">
+      <!-- BACK RIBBON LOOPS -->
+      <!-- Left top back loop -->
+      <path d="M 215 140 C 190 95 135 105 115 145 C 95 185 115 225 155 240" 
+            fill="none" stroke="url(#ribbonGradBack)" stroke-width="24" stroke-linecap="round" />
+      
+      <!-- Right back loop -->
+      <path d="M 315 210 C 355 195 395 210 395 255 C 395 295 335 305 285 260" 
+            fill="none" stroke="url(#ribbonGradBack)" stroke-width="22" stroke-linecap="round" />
+
+      <!-- LEFT PILLAR (Dark 3D H-Column) -->
+      <!-- Left Bevel Face -->
+      <polygon points="160,85 185,102 185,310 160,325" fill="url(#darkPillarSide)" />
+      <!-- Front Face -->
+      <polygon points="185,102 225,110 225,295 185,310" fill="url(#darkPillarFront)" />
+      <!-- Top Bevel -->
+      <polygon points="160,85 200,90 225,110 185,102" fill="#64748B" />
+      
+      <!-- H Crossbar segment -->
+      <polygon points="225,185 275,185 275,225 225,225" fill="#0A1120" />
+
+      <!-- RIGHT PILLAR (Cyan/Blue 3D H-Column) -->
+      <!-- Left Bevel Face -->
+      <polygon points="275,110 300,90 300,295 275,310" fill="url(#bluePillarSide)" />
+      <!-- Front Face -->
+      <polygon points="300,90 340,85 340,325 300,295" fill="url(#bluePillarFront)" />
+      <!-- Top Bevel -->
+      <polygon points="275,110 300,90 340,85 315,102" fill="#67E8F9" />
+
+      <!-- DIGITAL PIXEL CASCADE (Top-right burst) -->
+      <rect x="345" y="80" width="16" height="16" rx="2" fill="#00E5FF" />
+      <rect x="368" y="70" width="18" height="18" rx="2" fill="#00A3FF" />
+      <rect x="358" y="45" width="16" height="16" rx="2" fill="#38BDF8" />
+      <rect x="382" y="40" width="14" height="14" rx="2" fill="#0091FF" />
+      <rect x="404" y="32" width="10" height="10" rx="1.5" fill="#00D2FF" />
+      <rect x="398" y="58" width="15" height="15" rx="2" fill="#0066FF" />
+      <rect x="372" y="98" width="12" height="12" rx="1.5" fill="#0284C7" />
+      <rect x="358" y="122" width="14" height="14" rx="2" fill="#0070F3" />
+      <rect x="345" y="105" width="12" height="12" rx="1.5" fill="#38BDF8" />
+
+      <!-- FRONT RIBBON / INFINITY CLOUD SWOOP -->
+      <path d="M 108 200 C 95 240 135 285 185 280 C 238 275 282 195 335 170 C 375 152 405 185 378 235 C 352 272 305 260 265 225" 
+            fill="none" stroke="url(#ribbonGradFront)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- GLOSSY HIGHLIGHT RIM -->
+      <path d="M 116 205 C 105 235 140 275 185 270 C 235 265 280 188 335 163 C 370 148 395 178 375 220" 
+            fill="none" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="4" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- TYPOGRAPHY SECTION -->
+  <g text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    <!-- HIGH CLOUD -->
+    <text x="300" y="415" font-weight="900" font-size="44" letter-spacing="1">
+      <tspan fill="#0F172A">HIGH </tspan>
+      <tspan fill="url(#cloudGrad)">CLOUD</tspan>
+    </text>
+
+    <!-- SOFT TECH WITH ACCENT LINES -->
+    <g transform="translate(0, 445)">
+      <!-- Left line -->
+      <line x1="75" y1="0" x2="180" y2="0" stroke="url(#lineGradLeft)" stroke-width="2.5" stroke-linecap="round" />
+      <!-- Soft Tech text -->
+      <text x="300" y="5" font-weight="800" font-size="18" letter-spacing="8" fill="#0284C7">
+        SOFT TECH
+      </text>
+      <!-- Right line -->
+      <line x1="420" y1="0" x2="525" y2="0" stroke="url(#lineGradRight)" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+
+    <!-- PRIVATE LIMITED -->
+    <text x="300" y="480" font-weight="600" font-size="12" letter-spacing="7" fill="#64748B">
+      PRIVATE LIMITED
+    </text>
+
+    <!-- AI • SOFTWARE • INNOVATION -->
+    <g transform="translate(0, 520)" font-weight="600" font-size="11" letter-spacing="4" fill="#334155">
+      <text x="300" y="0">
+        <tspan>AI</tspan>
+        <tspan fill="#0284C7" font-size="14">  ●  </tspan>
+        <tspan>SOFTWARE</tspan>
+        <tspan fill="#0284C7" font-size="14">  ●  </tspan>
+        <tspan>INNOVATION</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

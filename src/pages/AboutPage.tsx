@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ShieldCheck, Users, Zap } from 'lucide-react';
+import Logo from '../components/ui/Logo';
 import SEO from '../components/ui/SEO';
 
 export default function AboutPage() {
@@ -28,7 +29,13 @@ export default function AboutPage() {
 
       <section className="py-32 bg-[#0A1428]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="max-w-4xl mx-auto space-y-32">
+          <div className="max-w-4xl mx-auto space-y-24">
+            
+            {/* Brand Logo Showcase Card with White Background Rounded Box */}
+            <div className="flex justify-center items-center py-4">
+              <Logo variant="card" />
+            </div>
+
             <div className="border-l-2 border-primary pl-8 py-4">
               <h2 className="text-[11px] font-bold tracking-[0.2em] text-primary uppercase mb-4">Our Vision</h2>
               <p className="text-2xl md:text-3xl text-[#F5F5F5] font-light leading-relaxed">

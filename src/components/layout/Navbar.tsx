@@ -22,11 +22,17 @@ export default function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex items-center justify-between h-24">
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center gap-2">
-              <Logo />
-              <span className="text-xl font-bold tracking-tighter text-[#F5F5F5] uppercase">
-                High Cloud Soft Tech
-              </span>
+            <Link to="/" className="flex items-center gap-3.5 group">
+              <Logo size="md" />
+              <div className="flex flex-col">
+                <div className="flex items-center gap-1.5 text-lg font-black tracking-tight uppercase leading-none">
+                  <span className="text-white">HIGH</span>
+                  <span className="bg-gradient-to-r from-blue-400 via-sky-400 to-cyan-300 bg-clip-text text-transparent">CLOUD</span>
+                </div>
+                <div className="text-[9px] font-bold tracking-[0.25em] text-primary uppercase mt-1">
+                  SOFT TECH
+                </div>
+              </div>
             </Link>
           </div>
           
