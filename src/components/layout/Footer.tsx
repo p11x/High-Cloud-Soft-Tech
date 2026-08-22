@@ -59,7 +59,7 @@ export default function Footer() {
           <div>
             <h3 className="text-[10px] font-bold tracking-widest text-primary uppercase mb-4">Contact</h3>
             <address className="not-italic space-y-3">
-              <p className="text-[11px] font-medium text-white/70 tracking-wider">Email: <br/><a href="mailto:hello@highcloud.in" className="hover:text-primary transition-colors text-white mt-1 block">HELLO@HIGHCLOUD.IN</a></p>
+              <p className="text-[11px] font-medium text-white/70 tracking-wider">Email: <br/><a href="mailto:connect@highcloudsofttech.com" className="hover:text-primary transition-colors text-white mt-1 block">CONNECT@HIGHCLOUDSOFTTECH.COM</a></p>
               <p className="text-[11px] font-medium text-white/70 tracking-wider">Phone: <br/><a href="tel:+919876543210" className="hover:text-primary transition-colors text-white mt-1 block">+91 98765 43210</a></p>
             </address>
           </div>

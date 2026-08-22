@@ -16,7 +16,7 @@ export default function HomePage() {
       "@type": "ContactPoint",
       "telephone": "+91-98765-43210",
       "contactType": "customer service",
-      "email": "hello@highcloud.in"
+      "email": "connect@highcloudsofttech.com"
     },
     "address": {
       "@type": "PostalAddress",

@@ -54,7 +54,7 @@ export default function PrivacyPolicyPage() {
 
           <h2 className="text-2xl font-bold text-white mt-8 mb-4">5. Your Rights</h2>
           <p>
-            You have the right to request access to, correction of, or deletion of your personal data stored by us. To exercise these rights, please contact us at <a href="mailto:hello@highcloud.in" className="text-primary hover:underline">hello@highcloud.in</a>.
+            You have the right to request access to, correction of, or deletion of your personal data stored by us. To exercise these rights, please contact us at <a href="mailto:connect@highcloudsofttech.com" className="text-primary hover:underline">connect@highcloudsofttech.com</a>.
           </p>
 
           <p className="pt-8 text-sm text-white/50">Last Updated: {new Date().toLocaleDateString()}</p>

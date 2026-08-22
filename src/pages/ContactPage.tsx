@@ -92,7 +92,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-sm font-bold tracking-widest uppercase mb-2 text-[#F5F5F5]">Email Us</h3>
                     <p className="text-white/60 font-light mb-2">For general inquiries and project discussions.</p>
-                    <a href="mailto:hello@highcloud.in" className="text-primary font-medium hover:underline tracking-wider">HELLO@HIGHCLOUD.IN</a>
+                    <a href="mailto:connect@highcloudsofttech.com" className="text-primary font-medium hover:underline tracking-wider">CONNECT@HIGHCLOUDSOFTTECH.COM</a>
                   </div>
                 </div>
 
